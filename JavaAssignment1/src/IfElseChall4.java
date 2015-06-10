@@ -6,9 +6,9 @@ public class IfElseChall4 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
-		System.out.println("Enter the number of test cases");
-        int t = in.nextInt();
-        while(t!=0)
+		System.out.println("Enter your choice : Y/y for continuing , n for Exit ");
+		char t = in.next().charAt(0);
+		while(t!='n')
         {
         	System.out.println("enter a character from english alphabet");
         	char ch = in.next().charAt(0);
@@ -16,7 +16,8 @@ public class IfElseChall4 {
         		System.out.println("The entered character is a vowel");
         	else
         		System.out.println("The entered character is a consonant");
-        	t--;
+        	System.out.println("Wish to continue : Press Y/y for continuing n for exit");
+			t = in.next().charAt(0);
         }
 
 	}

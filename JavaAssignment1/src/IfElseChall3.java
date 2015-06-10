@@ -6,9 +6,9 @@ public class IfElseChall3 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
-		System.out.println("Enter the number of test cases");
-		int t = in.nextInt();
-		while(t!=0)
+		System.out.println("Enter your choice : Y/y for continuing , n for Exit ");
+		char t = in.next().charAt(0);
+		while(t!='n')
 		{
 			System.out.println("Enter the year to be checked");
 			int year = in.nextInt();
@@ -34,7 +34,8 @@ public class IfElseChall3 {
 			{
 				System.out.println("The entered year is not a leap year");
 			}
-			t--;
+			System.out.println("Wish to continue : Press Y/y for continuing n for exit");
+			t = in.next().charAt(0);
 		}
 
 	}
