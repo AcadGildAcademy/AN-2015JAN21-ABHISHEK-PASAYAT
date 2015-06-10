@@ -25,7 +25,7 @@ public class ArrayChall4 {
 		int r2 = in.nextInt();
 		int c2 = in.nextInt();
         if(c1 != r2)
-        	System.out.println("Matrix multiplication is not possible gor given orders");
+        	System.out.println("Matrix multiplication is not possible for given orders");
         else
         {
         	int second[][] = new int[r2][c2];
