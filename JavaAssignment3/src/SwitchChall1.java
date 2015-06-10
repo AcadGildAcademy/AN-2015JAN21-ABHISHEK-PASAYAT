@@ -4,15 +4,17 @@ public class SwitchChall1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
-		System.out.println("Enter the year and the month in lower case");
+		System.out.println("Enter the month in numbers. Like 1 for january , 2 for february , 3 for march and so on till 12 for december.");
+		int str = in.nextInt();
+		System.out.println("Enter the year also");
 		int year = in.nextInt();
-		String str = in.nextLine();
 		//int leapyear(int year1);
+		//SwitchChall1 obj = new SwitchChall1();
 		switch(str)
 		{
-		case "january": System.out.println("The number of days in the month of january is 31");
+		case 1 : System.out.println("The number of days in the month of january is 31");
 		break;
-		case "february":{
+		case 2:
 			int ly = leapyear(year);
 			if(ly==1)
 			{
@@ -25,26 +27,25 @@ public class SwitchChall1 {
 				break;
 			}
 		 
-		}
-		case "march": System.out.println("The number of days in the month of march is 31");
+		case 3: System.out.println("The number of days in the month of march is 31");
 		   break;
-		case "april": System.out.println("The number of days in the month of april is 30");
+		case 4: System.out.println("The number of days in the month of april is 30");
 		   break;
-		case "may": System.out.println("The number of days in the month of may is 31");
+		case 5: System.out.println("The number of days in the month of may is 31");
 		   break;
-		case "june": System.out.println("The number of days in the month of june is 30");
+		case 6: System.out.println("The number of days in the month of june is 30");
 		   break;
-		case "july": System.out.println("The number of days in the month of july is 31");
+		case 7: System.out.println("The number of days in the month of july is 31");
 		   break;
-		case "august": System.out.println("The number of days in the month of august is 31");
+		case 8: System.out.println("The number of days in the month of august is 31");
 		   break;
-		case "september": System.out.println("The number of days in the month of september is 30");
+		case 9: System.out.println("The number of days in the month of september is 30");
 		   break;
-		case "october": System.out.println("The number of days in the month of october is 31");
+		case 10: System.out.println("The number of days in the month of october is 31");
 		   break;
-		case "november": System.out.println("The number of days in the month of novembe is 30");
+		case 11: System.out.println("The number of days in the month of november is 30");
 		   break;
-		case "december": System.out.println("The number of days in the month of decembe is 31");
+		case 12: System.out.println("The number of days in the month of december is 31");
 		   break;
 		}
 	}
