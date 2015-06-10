@@ -4,6 +4,12 @@ public class SwitchChall1 {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Scanner in = new Scanner(System.in);
+		System.out.println("Enter your choice : Y/y for continuing , N/n for exit");
+		char t = in.next().charAt(0);
+		if(t=='n')
+			System.out.println("Sorry you choose to exit before checking");
+		while(t!='n')
+		{
 		System.out.println("Enter the month in numbers. Like 1 for january , 2 for february , 3 for march and so on till 12 for december.");
 		int str = in.nextInt();
 		System.out.println("Enter the year also");
@@ -47,6 +53,9 @@ public class SwitchChall1 {
 		   break;
 		case 12: System.out.println("The number of days in the month of december is 31");
 		   break;
+		}
+		System.out.println("Wish to continue? Press Y to continue or N to exit");
+		t =  in.next().charAt(0);
 		}
 	}
 	public static int leapyear(int year1)
