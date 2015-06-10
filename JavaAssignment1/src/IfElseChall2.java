@@ -1,4 +1,6 @@
 import java.util.Scanner;
+
+
 public class IfElseChall2 {
 
 	public static void main(String[] args) {

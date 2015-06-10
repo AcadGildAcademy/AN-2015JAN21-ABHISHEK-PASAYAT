@@ -1,4 +1,6 @@
 import java.util.Scanner;
+
+
 public class IfElseChall1 {
 
 	public static void main(String[] args) {
@@ -13,7 +15,7 @@ public class IfElseChall1 {
 		System.out.println((age>=18)?"You are eligible to vote." : "You are not eligible to vote.");	
 		t--;
 	    }
+
 	}
 
 }
-
